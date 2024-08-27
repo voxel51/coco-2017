@@ -1,0 +1,23 @@
+name: brimoor/coco-2017
+description: The COCO-2017 dataset
+version: 1.0.0
+fiftyone:
+  version: "*"
+url: https://github.com/brimoor/coco-2017
+supports_partial_downloads: true
+tags:
+ - image
+ - detection
+ - segmentation
+splits:
+ - train
+ - validation
+ - test
+size_samples:
+ - train: 118287
+ - test: 40670
+ - validation: 5000
+size_bytes:
+ - train: null
+ - test: null
+ - validation: null
