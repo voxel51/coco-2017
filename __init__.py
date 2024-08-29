@@ -61,13 +61,9 @@ def download_and_prepare(
     Returns:
         a tuple of
 
-        -   ``dataset_type``: a ``fiftyone.types.Dataset`` type that the
-            dataset is stored in locally, or None if the dataset provides its
-            own ``load_dataset()`` method
-        -   ``num_samples``: the total number of downloaded samples for the
-            dataset or split
-        -   ``classes``: a list of classes in the dataset, or None if not
-            applicable
+        -   ``dataset_type``: None
+        -   ``num_samples``: the number of downloaded samples for the split
+        -   ``classes``: the list of classes in the dataset
     """
     split_dir = os.path.join(dataset_dir, split)
     raw_dir = os.path.join(dataset_dir, "raw")

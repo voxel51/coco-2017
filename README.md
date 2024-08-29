@@ -15,7 +15,7 @@ version of the dataset.
 
 ## Details
 
--   Dataset name: ``brimoor/coco-2017``
+-   Dataset name: ``voxel51/coco-2017``
 -   Dataset source: http://cocodataset.org/#home
 -   Dataset size: 25.20 GB
 -   Tags: ``image, detection, segmentation``
@@ -102,7 +102,7 @@ import fiftyone.zoo as foz
 #
 
 dataset = foz.load_zoo_dataset(
-    "https://github.com/brimoor/coco-2017",
+    "https://github.com/voxel51/coco-2017",
     split="validation",
     max_samples=50,
     shuffle=True,
@@ -123,7 +123,7 @@ session = fo.launch_app(dataset)
 #
 
 dataset = foz.load_zoo_dataset(
-    "https://github.com/brimoor/coco-2017",
+    "https://github.com/voxel51/coco-2017",
     split="validation",
     label_types=["segmentations"],
     classes=["cat", "dog"],
@@ -141,7 +141,7 @@ session.dataset = dataset
 #
 
 dataset = foz.load_zoo_dataset(
-    "https://github.com/brimoor/coco-2017",
+    "https://github.com/voxel51/coco-2017",
     split="validation",
     label_types=["detections", "segmentations"],
 )

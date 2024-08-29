@@ -1,8 +1,8 @@
-name: brimoor/coco-2017
+name: voxel51/coco-2017
 type: dataset
 author: The COCO Consortium
 version: 1.0.0
-url: https://github.com/brimoor/coco-2017
+url: https://github.com/voxel51/coco-2017
 source: http://cocodataset.org/#home
 license: https://cocodataset.org/#termsofuse
 description: The COCO-2017 dataset
