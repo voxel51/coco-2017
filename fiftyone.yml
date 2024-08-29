@@ -1,4 +1,5 @@
 name: brimoor/coco-2017
+type: dataset
 author: The COCO Consortium
 version: 1.0.0
 url: https://github.com/brimoor/coco-2017
