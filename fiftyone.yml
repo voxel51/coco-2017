@@ -1,9 +1,12 @@
 name: brimoor/coco-2017
-description: The COCO-2017 dataset
+author: The COCO Consortium
 version: 1.0.0
+url: https://github.com/brimoor/coco-2017
+source: http://cocodataset.org/#home
+license: https://cocodataset.org/#termsofuse
+description: The COCO-2017 dataset
 fiftyone:
   version: "*"
-url: https://github.com/brimoor/coco-2017
 supports_partial_downloads: true
 tags:
  - image
@@ -17,7 +20,3 @@ size_samples:
  - train: 118287
  - test: 40670
  - validation: 5000
-size_bytes:
- - train: null
- - test: null
- - validation: null

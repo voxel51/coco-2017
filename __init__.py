@@ -23,7 +23,8 @@ def download_and_prepare(
     seed=None,
     max_samples=None,
 ):
-    """Downloads the specified split of the COCO-2017 dataset.
+    """Downloads the specified split of the dataset and prepares it for loading
+    into FiftyOne.
 
     Args:
         dataset_dir: the directory in which to construct the dataset
@@ -58,15 +59,21 @@ def download_and_prepare(
             requirements. By default, all matching samples are downloaded
 
     Returns:
-        the total number of downloaded images across the specified split(s)
+        a tuple of
+
+        -   ``dataset_type``: a ``fiftyone.types.Dataset`` type that the
+            dataset is stored in locally, or None if the dataset provides its
+            own ``load_dataset()`` method
+        -   ``num_samples``: the total number of downloaded samples for the
+            dataset or split
+        -   ``classes``: a list of classes in the dataset, or None if not
+            applicable
     """
     split_dir = os.path.join(dataset_dir, split)
     raw_dir = os.path.join(dataset_dir, "raw")
     scratch_dir = os.path.join(dataset_dir, "tmp-download")
 
     dataset_type = None
-    # dataset_type = fo.types.COCODetectionDataset
-
     num_samples, classes, _ = fouc.download_coco_dataset_split(
         split_dir,
         split,
@@ -98,7 +105,7 @@ def load_dataset(
     seed=None,
     max_samples=None,
 ):
-    """Loads the specified split of the COCO-2017 dataset.
+    """Loads the specified split of the dataset into FiftyOne.
 
     Args:
         dataset: a :class:`fiftyone.core.dataset.Dataset` to which to import
