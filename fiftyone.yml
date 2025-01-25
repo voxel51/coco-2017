@@ -4,7 +4,7 @@ author: The COCO Consortium
 version: 1.0.0
 url: https://github.com/voxel51/coco-2017
 source: http://cocodataset.org/#home
-license: https://cocodataset.org/#termsofuse
+license: CC-BY-4.0
 description: The COCO-2017 dataset
 fiftyone:
   version: "*"
